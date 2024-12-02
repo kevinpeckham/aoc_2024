@@ -97,7 +97,6 @@ function evaluateSet(set: number[]) {
 	}
 
 	// iterate through the evaluations, try replacing them and see if the set becomes safe
-
 	for (let i = 0; i < evaluations.length; i++) {
 		// create new set with number removed
 		const newSet = set.filter((_, index) => index !== i);
