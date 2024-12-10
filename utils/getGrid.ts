@@ -1,4 +1,6 @@
-export default function getGrid(data: string): string[][] {
+import type { Grid } from "../types/Grid"; // string[][]
+
+export function getGrid(data: string): Grid {
 	// Check for empty input
 	if (!data || !data.trim()) {
 		throw new Error("Input data is empty");
@@ -21,3 +23,4 @@ export default function getGrid(data: string): string[][] {
 
 	return matches.map((row) => row.split(""));
 }
+export default getGrid;
